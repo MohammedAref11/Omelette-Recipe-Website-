@@ -1,0 +1,102 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+:root { 
+    /* Colors */
+    --card-background-color: hsl(0, 0%, 100%);
+    --body-background-color: hsl(30, 54%, 90%); 
+    --recipe-title-color: hsl(24, 5%, 18%); 
+    --para-color: hsl(30, 10%, 34%); 
+    --section-titile-color: hsl(14, 45%, 36%); 
+    --peraparation-time-background: hsl(330, 100%, 98%); 
+    --peraparation-time-header-color: hsl(332, 51%, 32%);
+
+    /* Spacing */
+    --spacing-s: 4px; 
+    --spacing-m: 8px; 
+    --spacing-l: 12px; 
+    --spacing-xl: 16px; 
+
+    /* Font weights */
+    --medium: 400; 
+    --semi-bold: 600; 
+    --bold: 700; 
+}
+
+@font-face {
+    font-family: "outfit";
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.woff2) format('woff2');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400 700;
+}
+
+@font-face { 
+    font-family: "young-serif";
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body { 
+    background-color: var(--body-background-color);
+    height: 100dvh; 
+}
+
+
+
