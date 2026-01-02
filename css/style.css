@@ -108,6 +108,15 @@ body {
 
 }
 
+h3 { 
+  font-family: "young-serif";
+}
+
+hr { 
+  margin: 20px 0;
+  opacity: 0.6;
+}
+
 .recipe-container { 
   background-color: white;
   max-width: 720px;
@@ -123,19 +132,20 @@ body {
   .recipe-container { 
     border-radius: 0px;
     padding-top: 0px;
+    padding: 0px;
   }
 
   .recipe-container img { 
-    min-width: 96vw;
     border-radius: 0px;
     margin-top: 0px;
   }
 }
 
 .recipe-title { 
+  display: inline-block;
   font-family: "young-serif"; 
   color: var(--Stone-900);
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: var(--medium);
   margin-top: var(--spacing-xl);
   padding-left: 2px;
@@ -155,6 +165,7 @@ body {
 .preparation-time-section h3 { 
   font-size: 1.25rem;
   padding-left: 2px;
+  font-family: "outfit";
   font-weight: var(--semi-bold);
   color: var(--Rose-800);
   padding: 8px;
@@ -184,7 +195,99 @@ body {
 
 .ingredients-section h3 { 
   font-size: 1.8rem;
+  margin-bottom: var(--spacing-s);
   font-family: "young-serif";
   font-weight: var(--medium);
+  color: var(--Brown-800);
 }
+
+.ingredients-list { 
+  padding-left: 24px;
+}
+
+
+.ingredients-list li{ 
+  padding-left: var(--spacing-s);
+  padding-bottom: 10px;
+  color: var(--Stone-600);
+}
+
+.ingredients-section .ingredients-list li::marker { 
+  color: var(--Brown-800);
+}
+
+.instructions-section h3 { 
+    font-size: 1.8rem;
+    font-weight: var(--medium);
+    color: var(--Brown-800);
+    margin-bottom: var(--spacing-s);
+}
+
+.instructions-list { 
+  padding-left: var(--spacing-m);
+
+}
+
+.instructions-list li { 
+  padding-bottom: 10px;
+  color: var(--Stone-600);
+  padding-left: var(--spacing-s);
+}
+
+.instructions-section .instructions-list li::marker{ 
+  font-weight: bold;
+  color: var(--Brown-800);
+}
+
+.nutrition-section h3 { 
+  color: var(--Brown-800);
+  font-size: 1.8rem;
+  font-weight: var(--medium);
+  margin-bottom: 10px;
+}
+
+.nutrition-section p { 
+  color: var(--Stone-600);
+} 
+
+.nutrition-table { 
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.nutrition-section tr:not(:last-child) {
+  border-bottom: 1px solid var(--Stone-150); 
+}
+
+.td1 { 
+  color: var(--Stone-600);
+}
+
+.td2 { 
+  color: var(--Rose-800);
+  font-weight: var(--bold);
+
+}
+
+.nutrition-table td { 
+  padding: 12px 0px; 
+}
+
+
+
+@media (max-width:500px ) { 
+  .recipe-description , h1, h2 , h3{ 
+    padding-left: 10px;
+  }
+  section { 
+    padding-left: 10px;
+  }
+}
+
+
+
+
+
+
 
